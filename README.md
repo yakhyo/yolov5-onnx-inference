@@ -5,12 +5,12 @@
 <video controls autoplay loop src="https://github.com/user-attachments/assets/f988c823-0638-44b3-be7e-a77fe423e275" muted="false"></video>
 Link: https://youtu.be/Snyg0RqpVxY
 
-This repository contains code and instructions for performing object detection using YOLOv5 inference using ONNX Runtime.
+This repository contains code and instructions for performing object detection using YOLOv5 inference with ONNX Runtime.
 ## Features
 
-- Inference using ONNX Runtime using GPU (tested on Ubuntu).
+- Inference using ONNX Runtime with GPU (tested on Ubuntu).
 - Easy-to-use Python scripts for inference.
-- Supports multiple input formats: image, video or webcam.
+- Supports multiple input formats: image, video, or webcam.
 
 ## Installation
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Before running inference, you need to download weights of YOLOv5 model weights in ONNX format.
+Before running inference, you need to download weights of the YOLOv5 model weights in ONNX format.
 
 #### Download weights (Linux)
 
@@ -37,7 +37,7 @@ Before running inference, you need to download weights of YOLOv5 model weights i
 download.sh yolov5s
 ```
 
-#### Download weights from following links
+#### Download weights from the following links
 
 **Note:** The weights are saved in FP32.
 
@@ -51,7 +51,7 @@ download.sh yolov5s
 
 <br>
 
-> If you have custome weights, you can convert your weights to ONNX format. Follow the instructions in the [YOLOv5 repository](https://github.com/ultralytics/yolov5) to convert your model. You can use converted onnx model with this repo.
+> If you have custom weights, you can convert your weights to ONNX format. Follow the instructions in the [YOLOv5 repository](https://github.com/ultralytics/yolov5) to convert your model. You can use the converted ONNX model with this repository.
 
 #### Inference
 
@@ -61,8 +61,8 @@ python main.py --weights weights/yolov5s.onnx --source assets/vid_input.mp4 # vi
                                               --source assets/img_input.jpg # image
 ```
 
-- To save results add `--save-img` argument and results will be saved under `runs` folder
-- To display video add `--view-img` argument
+- To save results add the `--save-img` argument and results will be saved under the `runs` folder
+- To display video add the `--view-img` argument
 
 **Command Line Arguments**
 
