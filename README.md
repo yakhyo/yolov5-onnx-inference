@@ -43,11 +43,11 @@ download.sh yolov5s
 
 | Model Name | ONNX Model Link                                                                                       | Number of Parameters | Model Size |
 | ---------- | ----------------------------------------------------------------------------------------------------- | -------------------- | ---------- |
-| YOLOv5n    | [yolov5n.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0/yolov5n.onnx) | 1.9M                 | 8 MB       |
-| YOLOv5s    | [yolov5s.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0/yolov5s.onnx) | 7.2M                 | 28 MB      |
-| YOLOv5m    | [yolov5m.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0/yolov5m.onnx) | 21.2M                | 84 MB      |
-| YOLOv5l    | [yolov5l.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0/yolov5l.onnx) | 46.5M                | 176 MB     |
-| YOLOv5x    | [yolov5x.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0/yolov5x.onnx) | 86.7M                | 332 MB     |
+| YOLOv5n    | [yolov5n.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1/yolov5n.onnx) | 1.9M                 | 8 MB       |
+| YOLOv5s    | [yolov5s.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1/yolov5s.onnx) | 7.2M                 | 28 MB      |
+| YOLOv5m    | [yolov5m.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1/yolov5m.onnx) | 21.2M                | 84 MB      |
+| YOLOv5l    | [yolov5l.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1/yolov5l.onnx) | 46.5M                | 176 MB     |
+| YOLOv5x    | [yolov5x.onnx](https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1/yolov5x.onnx) | 86.7M                | 332 MB     |
 
 <br>
 

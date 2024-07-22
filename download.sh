@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the base URL for the downloads
-BASE_URL="https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v1.0.0"
+BASE_URL="https://github.com/yakhyo/yolov5-onnx-inference/releases/download/v0.0.1"
 
 # Create the weights directory if it does not exist
 mkdir -p weights
