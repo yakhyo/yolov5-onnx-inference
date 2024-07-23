@@ -34,7 +34,11 @@ Before running inference, you need to download weights of the YOLOv5 model weigh
 #### Download weights (Linux)
 
 ```bash
-download.sh yolov5s
+sh download.sh yolov5n
+               yolov5s
+               yolov5m
+               yolov5l
+               yolov5x
 ```
 
 #### Download weights from the following links

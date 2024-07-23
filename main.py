@@ -1,3 +1,4 @@
+import os
 import cv2
 import logging
 import argparse
@@ -29,6 +30,16 @@ def run_object_detection(
     model = YOLOv5(weights, conf_thres, iou_thres, max_det)
     img_size = check_img_size(img_size, s=model.stride)
     dataset = LoadMedia(source, img_size=img_size)
+    
+    # For writing video and webcam
+    vid_writer = None
+    if save_img and dataset.type in ["video", "webcam"]:
+        cap = dataset.cap
+        save_path = str(save_dir / os.path.basename(source))
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        vid_writer = cv2.VideoWriter(save_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (width, height))
 
     for resized_image, original_image, status in dataset:
         # Model Inference
@@ -56,8 +67,14 @@ def run_object_detection(
         print(status)
 
         if save_img:
-            save_path = str(save_dir / f"frame_{dataset.frame:04d}.jpg")
-            cv2.imwrite(save_path, original_image)
+            if dataset.type == "image":
+                save_path = str(save_dir / f"frame_{dataset.frame:04d}.jpg")
+                cv2.imwrite(save_path, original_image)
+            elif dataset.type in ["video", "webcam"]:
+                vid_writer.write(original_image)
+
+    if save_img and vid_writer is not None:
+        vid_writer.release()
 
     if save_img:
         print(f"Results saved to {save_dir}")
