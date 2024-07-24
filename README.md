@@ -2,7 +2,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/yakhyo/yolov5-onnx-inference/total)
 
-<video controls autoplay loop src="https://github.com/user-attachments/assets/f988c823-0638-44b3-be7e-a77fe423e275" muted="false"></video>
+<video controls autoplay loop src="https://github.com/user-attachments/assets/f988c823-0638-44b3-be7e-a77fe423e275" muted="false" width="100%"></video>
 Link: https://youtu.be/Snyg0RqpVxY
 
 This repository contains code and instructions for performing object detection using YOLOv5 inference with ONNX Runtime.
