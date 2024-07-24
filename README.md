@@ -1,6 +1,6 @@
 # YOLOv5 ONNX Object Detection Inference
 
-![Downloads](https://img.shields.io/github/downloads/yakhyo/yolov5-onnx-inference/total)
+![Downloads](https://img.shields.io/github/downloads/yakhyo/yolov5-onnx-inference/total)  [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/yakhyo/yolov5-onnx-inference)
 
 <video controls autoplay loop src="https://github.com/user-attachments/assets/f988c823-0638-44b3-be7e-a77fe423e275" muted="false" width="100%"></video>
 Link: https://youtu.be/Snyg0RqpVxY
